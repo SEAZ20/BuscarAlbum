@@ -24,7 +24,7 @@ $(document).ready(function() {
      	})
      	.done(function(datos){
             
-     		debugger
+     		
             $('#caja1').append('<div class="card mb-3" style="max-width: 640px; background-color: #81CCCC;" ><div class="row no-gutters"><div class="col-md-4"><img style="border-radius: 150px;" src="'+datos.cover_medium+'"></div><div class="col-md-8"><div class="card-body"><h5 class="card-title">Album</p><p class="card-text"><small>'+datos.title+'</h5><p> :: '+datos.nb_tracks+' Canciones ♫ :: <br>:: Duración: '+datos.duration+' seg ▶:: <br> :: Publicado: '+datos.release_date+' ⌚ ::</small></p></div></div></div></div>')
              $('#caja2').append('<div class="card mb-3" style="max-width: 640px; background-color: #81CCCC;" ><div class="row no-gutters"><div class="col-md-4"><img style="border-radius: 150px;" src="'+datos.artist.picture_medium+'"></div><div class="col-md-8"><div class="card-body"><h5 class="card-title">Artista</p><p class="card-text"><small>'+datos.artist.name+'</h5><p> :: '+datos.fans+' Fans ♛ ::</small></p></div></div></div></div>')
 
@@ -43,7 +43,7 @@ $(document).ready(function() {
      		console.log("success");
      	})
      	.fail(function() {
-            debugger
+            
      		console.log("error");
      	})
      	 
