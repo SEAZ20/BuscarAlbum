@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <import swal from 'sweetalert'>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>::Buscar Album Por Id::</title>
+	<link rel="stylesheet" href="">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	
+</head>
+<body class="bg">
+  <header id="header" class="">
+  	 	
+  	
+    <div class="container-fluit">
+    	<nav class="navbar navbar-light barra">
+ 		   <a class="navbar-brand barra" href="#">
+    		  <img src="Imagenes/BQ16WtL.png" width="30" height="30" class="d-inline-block align-top" alt="">
+    		  deezer
+  		    </a>
+        </nav>
+
+        <div class="jumbotron text-center">
+	 	       <img src="Imagenes/6.png" style="float:left;" width="450" height="155" alt="">
+	 	       <img src="Imagenes/7.png" style="float:right;" width="450" height="155" alt="">
+       	        <h1>Buscar Album</h1> 
+        
+              <form class="form">
+    				<div class="input-group">
+      		     	   <input type="number" min="1" class="form-control" size="50" placeholder="Ingrese id del album" required align="center" id="txtid">
+      				   <div class="input-group-btn">
+        	              <button type="button" class="btn btn-secondary"" id="buscar">Buscar</button>
+      		           </div>
+    		       </div>
+  		     </form>
+        </div>
+    </div>
+  </header>	  	
+    
+     
+ <section>
+
+<!-- <div class="card mb-3" style="max-width: 640px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img style="border-radius: 150px;" src='+datos.cover_medium+'>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">'+datos.title+'</h5>
+       <p class="text-muted">'+datos.nb_tracks+' Canciones :: Duración: '+datos.duration+' seg :: Publicado: '+datos.release_date+'</p>'
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+      -->
+
+ 	<div class="container-fluit" id="al_ar">
+  		<div class="row">
+  			<div class=" col-lg-6" style="text-align: center;" id="caja1"></div>
+     	   <div class=" col-lg-6" style="text-align: center;" id="caja2"></div>
+  		 </div>
+ 	</div>
+	
+	
+
+    <div class="row">	
+    	<div class="col-md-12">
+    		<table class="table table-bordered table-hover" id="musicas">
+    			<thead>
+    				<tr style="background-color:#81CCCC">
+    				    <th colspan="4" style="text-align: center;">Canciones</th>
+    				</tr>
+    			</thead>
+                <thead>
+                  <tr style="background-color:#81CCCC">
+                  	 <th scope="col" style="text-align: center;">Artista</th>
+                     <th scope="col" style="text-align: center;">Nombre de la canción</th>
+                     <th scope="col" style="text-align: center;">Duración</th>
+                     <th scope="col" style="text-align: center;">Preview</th>
+                  </tr>
+                </thead>
+            </table> 
+    	</div>
+    </div>
+ </section>
+
+<footer class="section footer-classic context-dark bg-image" style="background: #00807F;">
+        <div class="container">
+          <div class="row row-30">
+            <div class="col-md-4 col-xl-5">
+              <div class="pr-xl-4"><a class="brand" href="index.html"><img class="brand-logo-light" src="Imagenes/BQ16WtL.png" alt="" width="100" height="100" ></a>
+                <p>Esta pagina web tiene como objetivo buscar albumes musicales, se debe ingresar el id del album que se desea buscar, al buscar aparecerá imagen del album, nombre del album, cantidad de canciones, duración, fecha de publicación y asi como tambien la imagen del artista y sus fans </p>
+                
+                <p class="rights"><span>©  </span><span class="copyright-year">2019</span><span> </span><span>Seaz&Trinidad</span><span>. </span><span>Todos los derechos reservados.</span></p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <h5>Contactos</h5>
+              <dl class="contact-list">
+                <dt>Dirección:</dt>
+                <dd>Chone-Canuto-Calle Ricaurte</dd>
+                <dd>Bolivar-Calceta-Avenida Estudiantil</dd>
+              </dl>
+              <dl class="contact-list">
+                <dt>email:</dt>
+                <dd><a href="mailto:#">seaz199820@gmail.com</a></dd>
+                <dd><a href="mailto:#">Trinidad@gmail.com</a></dd>
+              </dl>
+              <dl class="contact-list">
+                <dt>Telefono:</dt>
+                <dd><a href="tel:#">+593 999899664</a> <span>o</span> <a href="tel:#">+593 9571195353</a>
+                </dd>
+              </dl>
+            </div>
+            <div class="col-md-4 col-xl-3">
+              <h5>Mas información</h5>
+              <ul class="nav-list">
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contactos</a></li>
+                <li><a href="#">Inicio</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row no-gutters social-container">
+        <div class="col"><a class="social-inner" href="#"><span><img src="Imagenes/facebook.png" width="20" height="20" alt="">Facebook</span></a></div>
+           <div class="col"><a class="social-inner" href="#"><span><img src="Imagenes/instagram.png" width="20" height="20" alt="">  Instagram</span></a></div>
+          <div class="col"><a class="social-inner" href="#"><span><img src="Imagenes/twitter.png" width="20" height="20" alt="">  Twitter</span></a></div>
+           <div class="col"><a class="social-inner" href="#"><span><img src="Imagenes/google-plus.png" width="20" height="20" alt="">  Google+</span></a></div>
+          
+        
+        </div>
+      </footer>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script src="myscript.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="plugins/sweetAlert2/sweetalert2.all.min.js"></script>
+</body>
+</html>
